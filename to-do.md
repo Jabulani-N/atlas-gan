@@ -29,9 +29,8 @@
         * shape `(num_samples, 28, 28)` - `28x28` pixels.
           * one `28x28` array of pixels per image.
           * grayscale.
-            * [ ] ~~convert to color so I can use a single preprocess function~~
-            * [ ] alternatively, have preprocessor behave differently based on if image is grayscale or color
-              * simply comment out hte part that respects the 3 color channels and replace it with the one grayscale chanel
+            * [ ]  comment out the part of preprocessor that respects the 3 color channels and replace it with the one grayscale chanel
+              * I likely don't need to understand what the grayscale channels are doing, because the point is that it will perform the same math logic, but on the one channel
               * this is better, because all images in my own version will be color, so no point in doing hard work.,
       * **we can ignore testing data for this project**.
         * `testing_data` items are used for supervised learning models to be evaluated. they are arranged the same way as the `images` and it's `labels`, but are separate so you can judge a model's labelling accuracy on data it has yet to see.
