@@ -6,8 +6,8 @@
 
 # SETUP
 
-- [ ] find where I did the MNIST preprocessing before
-* it's in github.
+- [x] find where I did the MNIST preprocessing before
+* it's in supervised learning > object detection > [7-yolo.](https://github.com/Jabulani-N/atlas-machine_learning/blob/main/supervised_learning/object_detection/7-yolo.py)
 
 - [ ] copy that preprocessor code into current project
 
