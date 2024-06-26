@@ -68,5 +68,8 @@ Colab Code is being worked on [here](https://colab.research.google.com/drive/1NA
 - [ ] see if increaseing or decreasing hte number of layers improves things
   - [ ] find out how to get useful performance data.
   - [weights and biases site](https://docs.wandb.ai)?
+  - [ ] make account
+  - [ ] get a single test to work
+  - [ ] message kush if you can't
 - [ ] filter sizes
 - [ ] strides
