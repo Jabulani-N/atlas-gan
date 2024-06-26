@@ -58,12 +58,15 @@ Colab Code is being worked on [here](https://colab.research.google.com/drive/1NA
 
 # DCGAN
 
-- [ ] impliment a baseline DCGAN
+- [x] impliment a baseline DCGAN
    * seems to mean it uses convolutional layers.
-   * this week's autoencoder project used convolutional layers, so we may be able to replicate it
-- [ ] Train that baseline DCGAN on MNIST
+   * [this week's autoencoder project](https://github.com/Jabulani-N/atlas-machine_learning/blob/main/unsupervised_learning/autoencoders/2-convolutional.py) used convolutional layers, so we may be able to replicate it's basic structure
+   * This just means do the Dricriminator and Generator as the example provided.
+- [x] Train that baseline DCGAN on MNIST
 
 ## Alter the DCGAN
 - [ ] see if increaseing or decreasing hte number of layers improves things
+  - [ ] find out how to get useful performance data.
+  - weights and biases site?
 - [ ] filter sizes
 - [ ] strides
