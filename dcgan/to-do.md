@@ -67,6 +67,6 @@ Colab Code is being worked on [here](https://colab.research.google.com/drive/1NA
 ## Alter the DCGAN
 - [ ] see if increaseing or decreasing hte number of layers improves things
   - [ ] find out how to get useful performance data.
-  - weights and biases site?
+  - [weights and biases site](https://docs.wandb.ai)?
 - [ ] filter sizes
 - [ ] strides
