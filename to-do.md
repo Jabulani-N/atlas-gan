@@ -20,7 +20,9 @@
 
   * you may have it in the same previous YOLO project
 
-- [x] import mnist
+## mnist importing
+
+- [x] import mnist and define it as `images`
   * `(x_train, y_train), (x_test, y_test) = tensorflow.keras.datasets.mnist.load_data()`
   - [x] I need to find out what data type it is so I can put it through my preprocessing function
     * I've imported it up to `mnist` so we can shorthand it thusly.
@@ -35,16 +37,22 @@
               * this is better, because all images in my own version will be color, so no point in doing hard work.,
       * **we can ignore testing data for this project**.
         * `testing_data` items are used for supervised learning models to be evaluated. they are arranged the same way as the `images` and it's `labels`, but are separate so you can judge a model's labelling accuracy on data it has yet to see.
-- [ ]  rewrite preprocess method into a strong, independant function.
-- [ ]  preprocess the MNIST
+- [x]  rewrite preprocess method into a strong, independant function.
+
+## MNIST Preprocessing
+
+* The preprocessor is source-agnostic. As long as it gets a list of images, it'll output a list of resized images
+
+* **be sure to remember to haev a dummy variable recieve second index of the output** (tuple), as the Preprocessing function will output a tuple of preprocessed images and a list of oriignal sizes.
+
+- [x]  preprocess the MNIST
     * you may have this imported and preprocessed in a previous project
       * I do but it's in the form of a class's metohd.
     * what am i even preprocessing this into?
       * we're gonna
         * make a standardized shape (i'll do like 4xx pixel squares or something)
         * divide pixel values by 255 so they're fractions between -1 and 1 (I think this ends up being 0 and 1) because models prefer these values over larger integers
-        * [ ] we'll want it to recive the list of images and output the preprocessed images
-
+        * [x] we'll want it to recive the list of images and output the preprocessed images
 
 # DCGAN
 
