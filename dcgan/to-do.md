@@ -59,6 +59,8 @@ Colab Code is being worked on [here](https://colab.research.google.com/drive/1NA
 # DCGAN
 
 - [ ] impliment a baseline DCGAN
+   * seems to mean it uses convolutional layers.
+   * this week's autoencoder project used convolutional layers, so we may be able to replicate it
 - [ ] Train that baseline DCGAN on MNIST
 
 ## Alter the DCGAN
