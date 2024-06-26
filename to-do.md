@@ -29,15 +29,21 @@
         * shape `(num_samples, 28, 28)` - `28x28` pixels.
           * one `28x28` array of pixels per image.
           * grayscale.
-            * [ ]  comment out the part of preprocessor that respects the 3 color channels and replace it with the one grayscale chanel
+            * [x]  comment out the part of preprocessor that respects the 3 color channels and replace it with the one grayscale chanel
+              * I looked at it after sleeping, and it's already shape-agnostic
               * I likely don't need to understand what the grayscale channels are doing, because the point is that it will perform the same math logic, but on the one channel
               * this is better, because all images in my own version will be color, so no point in doing hard work.,
       * **we can ignore testing data for this project**.
         * `testing_data` items are used for supervised learning models to be evaluated. they are arranged the same way as the `images` and it's `labels`, but are separate so you can judge a model's labelling accuracy on data it has yet to see.
-- [ ]  rewrite preprocess methofd into a strong, independant function.
+- [ ]  rewrite preprocess method into a strong, independant function.
 - [ ]  preprocess the MNIST
     * you may have this imported and preprocessed in a previous project
       * I do but it's in the form of a class's metohd.
+    * what am i even preprocessing this into?
+      * we're gonna
+        * make a standardized shape (i'll do like 4xx pixel squares or something)
+        * divide pixel values by 255 so they're fractions between -1 and 1 (I think this ends up being 0 and 1) because models prefer these values over larger integers
+        * [ ] we'll want it to recive the list of images and output the preprocessed images
 
 
 # DCGAN
