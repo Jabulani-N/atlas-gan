@@ -4,6 +4,8 @@
 
 - [X] checked content
 
+Colab Code is being worked on [here](https://colab.research.google.com/drive/1NA0OC1-2ocgxEiNO--E7BGnhutgOILcZ?usp=sharing)
+
 # SETUP - MNIST GAN
 
 - [x] find where I did the MNIST preprocessing before

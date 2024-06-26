@@ -4,6 +4,8 @@ Generative Adversarial Networks.
 
 Course written by Kush Aswani.
 
+Colab Code is being worked on [here](https://colab.research.google.com/drive/1NA0OC1-2ocgxEiNO--E7BGnhutgOILcZ?usp=sharing)
+
 # Notes from Resources
 
 ## [A Friendly Introduction to Generative Adversarial Networks](https://www.youtube.com/watch?v=8L11aMN5KY8):
