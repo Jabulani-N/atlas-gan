@@ -21,9 +21,11 @@ other relevant factors
 * Improvements I'd like to make are as follows:
   1. add code to preview the final generator output.
       * this way, I will be able to ensure training results are actually imrpoving
-  1.    convert the structure to [tensorflow](https://www.tensorflow.org/tutorials/generative/dcgan)
-        * this is a much larger task, but will be necessary for the following:
+  2. clean up superfluous testing commentary
+      * There is a great deal of residual comments filled with test code I used while debugging
+  3.    convert the structure to [tensorflow](https://www.tensorflow.org/tutorials/generative/dcgan)
+        * this is a much larger task, but will be necessary for the custom imageset I'd like to work with afterwards
         * Because I feel I fully understand the logic of steps taken, and they are each broken into pieces, I believe it is a very achievable revamp, given time.
-  2. have complete training on custom imageset.
+  4. have complete training on custom imageset.
       * in particular, I want this to be set up to work even on very high quality images, which Tensorflow should enable via GPU usage.
       * the current project is using CPU only, so it ends up inefficient for the task.
