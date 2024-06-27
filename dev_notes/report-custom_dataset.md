@@ -23,3 +23,11 @@ training time
 * due to the significantly higher sizes of images used in this dataset, and how quickly the time to train ramped up in the mnist set with larger preprocessed image sizes, it will be important to eeffectively compress all images within the layers during any training steps, and restore them afterwards. I understand this is somethng done via kerenels in tensorflow for this very reason.
 * as the workload exceeds any allocations permitted, I am not able to check how the speed compares to the previous dataaset at this time.
 
+image quality
+* after getting an mnist image from the generator, the next step would be to use birme to create similarly small images for the sake of quickly testing, even though it wouldn't be a production-level of code performance overall.
+* This would allow evaluation of the current methods.
+* low quality but a discernable image may mean more epochs are appropriate, while a lack of any coherence at all may mean the discrimiator is too precise to be useful.
+  * the quality of the mnist would serve as a good controll, as it is of limited colors and has relatively uniform framing.
+
+other relevant factors
+* 
