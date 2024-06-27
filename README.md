@@ -4,7 +4,21 @@ Generative Adversarial Networks.
 
 Course written by Kush Aswani.
 
+
+# DCGAN
+
 Colab Code is being worked on [here](https://colab.research.google.com/drive/1NA0OC1-2ocgxEiNO--E7BGnhutgOILcZ?usp=sharing)
+
+`def import_images_as_list(folder_path=None):`
+
+* Utilize this function to load your imageset.
+  * it recieves folder paths, and will load `.png` and `.jpg` files
+
+* If you do not give a filepath, it will default to pulling the MNIST dataset from Keras.
+
+* `return`: the `image_list`
+  * this `list` is filled with `numpy.ndarray`s, with each array representing the pixels of the input image.
+  * The images within this list are not neccesarily the same size or shape. They are in the exact state they were uploaded in.
 
 # Notes from Resources
 
