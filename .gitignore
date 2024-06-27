@@ -1,3 +1,6 @@
+# specific files
+# script*.md
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
