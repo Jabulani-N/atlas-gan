@@ -65,6 +65,17 @@ Colab Code is being worked on [here](https://colab.research.google.com/drive/1NA
 - [x] Train that baseline DCGAN on MNIST
 
 ## Alter the DCGAN
+
+Let's aim to take no more than 1 hour of trying to get wanb to track our creation.
+
+- [ ] Begin video for each project after that hour
+
+actually, it may be better to do the video first, and then update code later.
+
+
+* the full dataset one can be presented in a similar video that highlights how the same code handles both operations
+  * may highlight that burme can be used to bulk square-ify images if getting non-square images causes a bug (as we didn't get far enough to test that)
+
 - [ ] see if increaseing or decreasing hte number of layers improves things
   - [ ] find out how to get useful performance data.
   - [weights and biases site](https://docs.wandb.ai)?
