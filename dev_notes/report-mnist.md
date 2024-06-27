@@ -1,3 +1,5 @@
+# Takeaways and Observations - MNIST
+
 I did manage to run the basic GAN structure in a way that would train without error.
 
 Preprocessor worked perfectly, so images can be prepared to be trained.
@@ -12,4 +14,4 @@ training time
 * Due to the extraordinary size of the MNIST dataset, I tested this with only the first 200 images when using CPU for testing.
 
 image quality
-* Unfortunately
+* Unfortunately, I was not yet able to have the generator produce a final image to view, but adding the code to do so should be very doable.

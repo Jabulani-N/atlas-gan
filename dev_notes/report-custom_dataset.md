@@ -1,3 +1,5 @@
+# Takeaways and Observations - custom dataset
+
 Though the code does seem to work on the custom imageset, I ran into a small problem:
 
 ![screenshot of full res is too large](./images/raw%20images%20cost%20too%20much%20at%20full%20res.PNG)
