@@ -11,4 +11,9 @@ Though the code does seem to work on the custom imageset, I ran into a small pro
 
 
 
-Some images were so large they nearly crashed my computer. This is minimal problem. Once I get access to my browser back, I can use a ewebsite known as "burme" to preprocess the images for me, so none use excessive memory for allocation.
+Some images were so large they nearly crashed my computer. This is minimal problem. If worst comes to worst, I can use https://www.birme.net to preprocess the images for me, so none use excessive memory for allocation.
+
+## Main topics
+
+model convergence
+* content
