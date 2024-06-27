@@ -26,8 +26,8 @@ training time
 image quality
 * after getting an mnist image from the generator, the next step would be to use birme to create similarly small images for the sake of quickly testing, even though it wouldn't be a production-level of code performance overall.
 * This would allow evaluation of the current methods.
-* low quality but a discernable image may mean more epochs are appropriate, while a lack of any coherence at all may mean the discrimiator is too precise to be useful.
+* If the results were, for example, low quality but a discernable image may mean more epochs are appropriate, while a lack of any coherence at all may mean the discrimiator is too precise to be useful.
   * the quality of the mnist would serve as a good controll, as it is of limited colors and has relatively uniform framing.
 
 other relevant factors
-* 
+* Upon reaching the point of training via this dataset, I may actaully be inclined to use significantly more images than I had expected. mnist training has 60,000 images, and the actual structure is relatively simple. All have the same "background," and the "subject" always has the same "color". A dataset of artwork-level images would likely be *massively* more complex. I currently have 10,000 images downlaoded for testing, but in terms of training, I believe it will be important to use the entire supply to maximize my chances at effective results.
