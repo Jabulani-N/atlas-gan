@@ -1,4 +1,4 @@
-script
+script for MNIST
 
 # Imports
 
@@ -7,6 +7,8 @@ script
 * dataset: mnist
 
 The basic structure of logic comes from Frinedly Introduction
+
+I began by copying their workflow so I wouldn't have a blank sheet staring at me, and it helped keep all my code well-sectioned
 
 # Real Images
 
@@ -22,6 +24,8 @@ This displays a random image from the list
 
 # Preprocessing
 
+Completing this task and having it function helped me fully understand what a preprocessor is for, and how it works.
+* It's all about using uniformly formatted data when training, for fewer potential "break points."
 * This gives all images a uniform format, and turns their integer values into float decimals
   * as this is often the format models need.
 
@@ -30,8 +34,6 @@ Default 48x48 is a quickly calculated size good for testing
 
 This displays the same image as the Real Image test, to assure the preproccesing works.
 
-Completing this task and having it function helped me fully understand what a preprocessor is for, and how it works.
-* It's all about using uniformly formatted data when training, for fewer potential "break points."
 
 
 # Generator
@@ -60,13 +62,17 @@ The same changes made to generator are applied to discriminator, for the most pa
 Part of the reason for the 48x48 resolution is that significant increases in image size create significant increases in training time.
 * similarly, I had to reduce the number of epochs and not use the entire dataset while testing, as the number of operations multiplies all of them, resulting in exponentially increasing train times.
 
+
+
 Now this architecture only performs basic forward propagations, and is not properly deep convolutional.
 
 In order to make this Deep Convolution, and not just a GAN
 
 * apply convolutional layering, based on the projects from recent weeks
 * That will take a significant review to fully understand how to impliment in that way.
-* I will likely need to convert the training to be handled by tensorflow or keras in order for more effective understanding of training results.
+  * but the logic should be able to be directly transferred over
+
+I will likely need to convert the training to be handled by tensorflow or keras in order for more effective understanding of training results.
 * It was simply too late in the project when I realized I had completely missed utilizing these modules.
 
 # Results

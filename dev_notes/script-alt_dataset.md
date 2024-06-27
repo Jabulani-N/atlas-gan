@@ -1,3 +1,5 @@
+script for functionality with different imagesets
+
 # changes when using custom dataset
 
 Because the real image import function is transferable, we can train using any given stored imageset. the chcanges in use are minimal, but I'll explain them here.
