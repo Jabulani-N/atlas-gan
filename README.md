@@ -9,12 +9,39 @@ Course written by Kush Aswani.
 
 Colab Code is being worked on [here](https://colab.research.google.com/drive/1NA0OC1-2ocgxEiNO--E7BGnhutgOILcZ?usp=sharing)
 
+
+Imports
+
+```
+# Imports
+from PIL import Image
+import os
+import keras
+import numpy as np
+from numpy import random
+import cv2
+from matplotlib import pyplot as plt
+%matplotlib inline
+
+# import MNIST
+from keras.datasets import mnist
+```
+
+Imageset import:
+
 `def import_images_as_list(folder_path=None):`
 
-* Utilize this function to load your imageset.
-  * it recieves folder paths, and will load `.png` and `.jpg` files
+* If you do not provide a folder path, it will default to using the MNIST dataset from Keras.
 
-* If you do not give a filepath, it will default to pulling the MNIST dataset from Keras.
+`mnist` allows us to use `tensorflow.keras.datasets.mnist.load_data()`
+* This returns a tuple of 2 tuples: `training` and `testing`
+  * the first object in each is a list of images, and the second a list of labels.
+* I exclusively used the 60000 test images, so I only cared about the first object in the first tuple: `(image_list, _), (_, _) = mnist.load_data()`
+* Utilizing this function to load your imageset without an argument loads the mnist.
+* Utilizing with a folder path (any `\` in name strings will need to be replaced with `\\`) as an argument will allow the use of any locally possessed imagesets.
+  * the function will load `.png` and `.jpg` files within.
+  * loaded images will be converted to `numpy.ndarray`s and put in a list the same wa
+
 
 * `return`: the `image_list`
   * this `list` is filled with `numpy.ndarray`s, with each array representing the pixels of the input image.
