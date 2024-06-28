@@ -12,6 +12,7 @@ Course written by Kush Aswani.
   - [A Friendly Introduction to Generative Adversarial Networks:](#a-friendly-introduction-to-generative-adversarial-networks)
 - [Functions](#functions)
 - [Classes](#classes)
+- [Training](#training)
 
 
 
@@ -108,3 +109,49 @@ This input shape can be the `pimage_sizes` tuple returned by the preproccessor, 
     `def __init__(self, input_shape):`
 
 The discriminator is extremely similar to the generator in source, setup, and use.
+
+# Training
+
+```
+
+# Set random seed
+np.random.seed(9)
+
+# Hyperparameters
+learning_rate = 0.01
+epochs = 100
+
+# The GAN
+D = Discriminator(pimage_sizes)
+G = Generator(pimage_sizes)
+
+```
+
+the above sets up a pair of objects that can be trained.
+
+Then for as many epochs as desired, one can teach the discriminator, generate from the generator, and teach the discriminator:
+
+```
+        # Update the discriminator weights from real image
+        D.update_from_image(pimage)
+
+        # Pick a random number to generate a fake image
+        z = random.rand()
+
+        # Calculate the discriminator error
+        errors_discriminator.append(sum(D.error_from_image(pimage) + D.error_from_noise(z)))
+
+        # Calculate the generator error
+        # my changes will make g.error return a 2D ndarray
+        errors_generator.append(G.error(z, D))
+
+        # Build a fake image
+        noise = G.forward(z)
+
+        # Update the discriminator weights from the fake image
+        D.update_from_noise(noise)
+
+        # Update the generator weights from the fake image
+        G.update(z, D)
+
+```
