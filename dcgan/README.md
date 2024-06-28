@@ -11,6 +11,7 @@ Course written by Kush Aswani.
 - [Notes from Resources](#notes-from-resources)
   - [A Friendly Introduction to Generative Adversarial Networks:](#a-friendly-introduction-to-generative-adversarial-networks)
 - [Functions](#functions)
+- [Classes](#classes)
 
 
 
@@ -93,6 +94,15 @@ This is a source-agnostic image preprocesssor. Given any list of imags, it'll re
   * `original_sizes` is a numpy.ndarray containing the original sizes, just in case.
   * `pimage_sizes`: tuple containing the uniform preprocessed height and width of the images.
     * essentially a tuple of the inputs, if they were provided. Otherwise `(48,48)`
+
+# Classes
+
+`class Generator():`
+    `def __init__(self, input_shape):`
+
+The generator class works very similarly to the example provided by [Luis Serrano](https://www.youtube.com/watch?v=8L11aMN5KY8)'s tutorial, but with the added ability to set an input shape.
+
+This input shape can be the `pimage_sizes` tuple returned by the preproccessor, and will set what shape of image the generator creates.
 
 
 
