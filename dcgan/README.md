@@ -81,8 +81,8 @@ https://wandb.ai/site can be used to compare different approaches you've made an
 `def preprocess_images(self, images):`
 
  * `images`: a `list` of images stored as `numpy.ndarrays`
-    * Resize the images with inter-cubic interpolation
-    * Rescale all images to have pixel values in the range [0, 1]
+    * Resizes the images with inter-cubic interpolation
+    * Rescales all images to have pixel values in the range [0, 1], rather than [0, 255]
   * `Return`s a tuple of `(pimages, image_shapes)`:
     * `pimages`: a `numpy.ndarray` of shape `(ni, input_h, input_w, 3)` containing all preprocessed images
         * `ni`: the number of images that were preprocessed
@@ -91,3 +91,5 @@ https://wandb.ai/site can be used to compare different approaches you've made an
         * `3`: number of color channels
   * `image_shapes`: a numpy.ndarray of shape (ni, 2) containing the original height and width of the images
     * `2` => `(image_height, image_width)`
+
+
