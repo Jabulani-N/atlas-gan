@@ -104,5 +104,7 @@ The generator class works very similarly to the example provided by [Luis Serran
 
 This input shape can be the `pimage_sizes` tuple returned by the preproccessor, and will set what shape of image the generator creates.
 
+`class Discriminator():`
+    `def __init__(self, input_shape):`
 
-
+The discriminator is extremely similar to the generator in source, setup, and use.
