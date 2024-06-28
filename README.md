@@ -40,7 +40,7 @@ Imageset import:
 * Utilizing this function to load your imageset without an argument loads the mnist.
 * Utilizing with a folder path (any `\` in name strings will need to be replaced with `\\`) as an argument will allow the use of any locally possessed imagesets.
   * the function will load `.png` and `.jpg` files within.
-  * loaded images will be converted to `numpy.ndarray`s and put in a list the same wa
+  * loaded images will be converted to `numpy.ndarray`s and put in a list `image_list` formatted the same way mnist delivers its images.
 
 
 * `return`: the `image_list`
