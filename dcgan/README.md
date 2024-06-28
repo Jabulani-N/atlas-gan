@@ -78,18 +78,21 @@ https://wandb.ai/site can be used to compare different approaches you've made an
 
 # Functions
 
-`def preprocess_images(self, images):`
+`def preprocess_images(images, new_width=48, new_height=48):`
 
+This is a source-agnostic image preprocesssor. Given any list of imags, it'll return a list of those same images resized to given dimensions, and a record of previous and current dimensions, repsectively.
  * `images`: a `list` of images stored as `numpy.ndarrays`
     * Resizes the images with inter-cubic interpolation
     * Rescales all images to have pixel values in the range [0, 1], rather than [0, 255]
-  * `Return`s a tuple of `(pimages, image_shapes)`:
+  * `Return`s a tuple of `(pimages, original_sizes, pimage_shapes)`:
     * `pimages`: a `numpy.ndarray` of shape `(ni, input_h, input_w, 3)` containing all preprocessed images
         * `ni`: the number of images that were preprocessed
         * `input_h`: the input height for the Darknet model Note: this can vary by model
         * `input_w`: the input width for the Darknet model Note: this can vary by model
         * `3`: number of color channels
-  * `image_shapes`: a numpy.ndarray of shape (ni, 2) containing the original height and width of the images
-    * `2` => `(image_height, image_width)`
+  * `original_sizes` is a numpy.ndarray containing the original sizes, just in case.
+  * `pimage_sizes`: tuple containing the uniform preprocessed height and width of the images.
+    * essentially a tuple of the inputs, if they were provided. Otherwise `(48,48)`
+
 
 
