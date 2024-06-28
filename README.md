@@ -4,6 +4,16 @@ Generative Adversarial Networks.
 
 Course written by Kush Aswani.
 
+**Contents**
+- [atlas-gan](#atlas-gan)
+- [DCGAN](#dcgan)
+    - [Imageset import:](#imageset-import)
+- [Notes from Resources](#notes-from-resources)
+  - [A Friendly Introduction to Generative Adversarial Networks:](#a-friendly-introduction-to-generative-adversarial-networks)
+- [Functions](#functions)
+
+
+
 
 # DCGAN
 
@@ -27,7 +37,7 @@ from matplotlib import pyplot as plt
 from keras.datasets import mnist
 ```
 
-Imageset import:
+### Imageset import:
 
 `def import_images_as_list(folder_path=None):`
 
